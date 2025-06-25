@@ -66,9 +66,9 @@ static const char unknown_str[] = "n/a";
  */
 static const struct arg args[] = {
 	/* function format          argument */
-	{ run_command, "VOL %s | ", "pamixer --get-volume-human" },
-        { cpu_perc, "CPU %s%% | ", NULL },
-	{ ram_perc, "RAM %s%% | ", NULL },
-	{ wifi_essid, "WLAN %s | ", "wlan0" },
+	{ run_command, "  %s | ", "pamixer --get-volume-human" },
+        { cpu_perc, "  %s%% | ", NULL },
+	{ ram_perc, "  %s%% | ", NULL },
+	{ wifi_essid, "  %s | ", "wlan0" },
 	{ datetime, "%s",           "%F %T" },
 };
